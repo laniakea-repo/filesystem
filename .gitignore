@@ -1,3 +1,7 @@
 src/
 pkg/
 *.tar.zst
+archlinux-logo.png
+archlinux-logo.svg
+archlinux-logo-text.svg
+archlinux-logo-text-dark.svg
