@@ -1,7 +1,7 @@
 # Maintainer: Aspen Schneider <rendezvous71@outlook.com>
 
 pkgname=filesystem
-pkgver=2024.12.17
+pkgver=2025.01.02
 pkgrel=1
 pkgdesc='Base Laniakea files'
 arch=('any')
@@ -28,6 +28,7 @@ backup=(
   'etc/subuid'
 )
 source=(
+  '00-laniakea'
   'arch-release'
   'laniakea-logo.png'
   'crypttab'
@@ -54,7 +55,8 @@ source=(
   'subgid'
   'subuid'
 )
-sha256sums=('01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b'
+sha256sums=('c604252410762879fdcf6076c8f634ae76f90a2082ad08b3df7be91e8563caec'
+            '01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b'
             'b410eada0b5f8bf812ba99a1c793e3512b88414334b9b3f010162ef7bacb90d1'
             'e03bede3d258d680548696623d5979c6edf03272e801a813c81ba5a5c64f4f82'
             'ed0cb4f1db4021f8c3b5ce78fdf91d2c0624708f58f36c9cf867f4d93c3bc6da'
@@ -93,6 +95,7 @@ package() {
     ["dev"]="755:0:0"
     ["etc"]="755:0:0"
     ["etc/ld.so.conf.d"]="755:0:0"
+    ["etc/motd.d"]="755:0:0"
     ["etc/profile.d"]="755:0:0"
     ["etc/skel"]="755:0:0"
     ["home"]="755:0:0"
@@ -172,6 +175,7 @@ package() {
     ["etc/hosts"]="hosts:644:0:0"
     ["etc/issue"]="issue:644:0:0"
     ["etc/ld.so.conf"]="ld.so.conf:644:0:0"
+    ["etc/motd.d/00-laniakea"]="00-laniakea:644:0:0"
     ["etc/nsswitch.conf"]="nsswitch.conf:644:0:0"
     ["etc/passwd"]="passwd:644:0:0"
     ["etc/profile"]="profile:644:0:0"
