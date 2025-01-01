@@ -2,7 +2,7 @@
 
 pkgname=filesystem
 pkgver=2025.01.02
-pkgrel=1
+pkgrel=2
 pkgdesc='Base Laniakea files'
 arch=('any')
 license=('GPL-3.0-or-later')
@@ -55,7 +55,7 @@ source=(
   'subgid'
   'subuid'
 )
-sha256sums=('c604252410762879fdcf6076c8f634ae76f90a2082ad08b3df7be91e8563caec'
+sha256sums=('81b735b396064713bc0446d4f2e654c9985b2c6808053b6a760f2eb72383c642'
             '01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b'
             'b410eada0b5f8bf812ba99a1c793e3512b88414334b9b3f010162ef7bacb90d1'
             'e03bede3d258d680548696623d5979c6edf03272e801a813c81ba5a5c64f4f82'
